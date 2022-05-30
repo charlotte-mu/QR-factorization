@@ -1,0 +1,120 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : QR_top
+Version: S-2021.06-SP2
+Date   : Mon May 30 14:22:42 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: u1/y_reg_reg[0][13]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u6/x_reg_reg[0][16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_top             tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  u1/y_reg_reg[0][13]/CK (DFFRX4)          0.00 #     0.50 r
+  u1/y_reg_reg[0][13]/Q (DFFRX4)           0.59       1.09 f
+  U44476/Y (NOR2X1)                        0.23       1.33 r
+  U55000/Y (AND2X2)                        0.23       1.55 r
+  U48970/Y (NAND2X4)                       0.12       1.67 f
+  U72873/Y (NAND2X4)                       0.09       1.76 r
+  U66561/Y (XOR2X4)                        0.19       1.95 f
+  U44053/Y (NAND2X2)                       0.17       2.12 r
+  U44003/Y (NAND4X4)                       0.17       2.29 f
+  U64337/Y (NAND2X6)                       0.15       2.44 r
+  U43707/Y (INVX3)                         0.09       2.53 f
+  U65494/Y (NOR2X6)                        0.11       2.64 r
+  U43492/Y (AND2X6)                        0.15       2.79 r
+  U64961/Y (NAND3X6)                       0.08       2.87 f
+  U80530/Y (NAND3X4)                       0.08       2.95 r
+  U83917/Y (OAI2BB1X4)                     0.20       3.16 r
+  U84282/Y (NAND2X6)                       0.08       3.24 f
+  U58432/Y (NAND2X8)                       0.07       3.31 r
+  U66882/Y (XNOR2X4)                       0.16       3.48 f
+  U71385/Y (BUFX20)                        0.20       3.68 f
+  U42628/Y (NAND2X6)                       0.10       3.78 r
+  U63230/Y (INVX16)                        0.08       3.86 f
+  U58175/Y (INVX20)                        0.11       3.97 r
+  U69806/Y (INVX20)                        0.09       4.06 f
+  U84291/Y (NAND2X4)                       0.09       4.15 r
+  U73960/Y (NAND2X4)                       0.11       4.26 f
+  U73958/Y (OR2X8)                         0.18       4.44 f
+  U50155/Y (NAND2X6)                       0.09       4.53 r
+  U82119/Y (NAND3X6)                       0.10       4.63 f
+  U52156/Y (NAND2X6)                       0.11       4.74 r
+  U84296/Y (XNOR2X4)                       0.17       4.91 r
+  U51257/Y (NAND2BX4)                      0.19       5.09 r
+  U81636/Y (AND2X8)                        0.15       5.25 r
+  U80375/Y (NAND4X4)                       0.12       5.37 f
+  U68058/Y (NOR2X6)                        0.13       5.49 r
+  U51779/Y (NAND2X6)                       0.08       5.57 f
+  U73955/Y (NAND2X8)                       0.08       5.65 r
+  U66492/Y (NAND2X6)                       0.06       5.71 f
+  U66491/Y (XOR2X4)                        0.15       5.86 f
+  U66490/Y (NAND2X6)                       0.12       5.98 r
+  U66347/Y (INVX12)                        0.07       6.05 f
+  U66559/Y (NOR2X8)                        0.14       6.19 r
+  U66557/Y (INVX20)                        0.15       6.33 f
+  U71889/Y (BUFX20)                        0.16       6.49 f
+  U56967/Y (INVX20)                        0.11       6.60 r
+  U39047/Y (INVX12)                        0.10       6.70 f
+  U69733/Y (NOR2X6)                        0.09       6.79 r
+  U56837/Y (NAND2X4)                       0.12       6.91 f
+  U56814/Y (NAND2X6)                       0.12       7.03 r
+  U69949/Y (OR2X8)                         0.19       7.21 r
+  U38014/Y (NAND2X2)                       0.10       7.31 f
+  U37819/Y (AND2X6)                        0.16       7.47 f
+  U56520/Y (NAND2X4)                       0.10       7.57 r
+  U71359/Y (AND2X8)                        0.21       7.78 r
+  U99508/Y (NOR2X8)                        0.10       7.88 f
+  U79178/Y (OA21X4)                        0.26       8.15 f
+  U47050/Y (OR2X4)                         0.23       8.37 f
+  U47125/Y (NAND2X4)                       0.09       8.46 r
+  U73505/Y (XOR2X4)                        0.18       8.64 r
+  U53210/Y (INVX3)                         0.12       8.76 f
+  U82368/Y (XOR2X4)                        0.17       8.93 r
+  U82367/Y (XNOR2X4)                       0.21       9.14 r
+  U106677/Y (NAND2X6)                      0.15       9.29 f
+  U82375/Y (NAND2X4)                       0.15       9.44 r
+  U72381/Y (NOR2X6)                        0.08       9.52 f
+  U53006/Y (NAND2X6)                       0.08       9.59 r
+  U66241/Y (NAND3X6)                       0.08       9.67 f
+  U72051/Y (XNOR2X4)                       0.17       9.84 f
+  U72048/Y (NAND2X6)                       0.09       9.93 r
+  U86349/Y (AND2X8)                        0.15      10.08 r
+  U46819/Y (INVX20)                        0.08      10.16 f
+  U108479/Y (NAND2X2)                      0.08      10.24 r
+  u6/x_reg_reg[0][16]/D (DFFRX2)           0.00      10.24 r
+  data arrival time                                  10.24
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  u6/x_reg_reg[0][16]/CK (DFFRX2)          0.00      10.40 r
+  library setup time                      -0.16      10.24
+  data required time                                 10.24
+  -----------------------------------------------------------
+  data required time                                 10.24
+  data arrival time                                 -10.24
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

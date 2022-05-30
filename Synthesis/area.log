@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : QR_top
+Version: S-2021.06-SP2
+Date   : Mon May 30 14:22:42 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /cad/CBDK/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                          110
+Number of nets:                         72610
+Number of cells:                        71870
+Number of combinational cells:          69516
+Number of sequential cells:              2354
+Number of macros/black boxes:               0
+Number of buf/inv:                      11714
+Number of references:                     211
+
+Combinational area:             876438.909793
+Buf/Inv area:                    75189.727320
+Noncombinational area:           80473.732666
+Macro/Black Box area:                0.000000
+Net Interconnect area:         7122815.901062
+
+Total cell area:                956912.642459
+Total area:                    8079728.543521
+1
